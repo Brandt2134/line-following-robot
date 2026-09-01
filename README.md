@@ -6,7 +6,7 @@ Full write-up with circuit derivation and testing notes is included in [`IECE111
 
 ## Circuit
 
-![Circuit schematic](./images/circuit_schematic.png)
+![Circuit schematic](./circuit_schematic.png)
 
 Each photoresistor (PRL, PRR) is wired into a voltage divider with a 10kΩ resistor, connected to an Arduino analog input. Each motor is switched by a digital output pin driving the gate of an NMOS transistor:
 - **Dark surface →** high photoresistor resistance → low voltage read on the analog pin → digital pin outputs LOW → transistor gate stays open → motor off
